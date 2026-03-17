@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer base {
+  .markdown-body a {
+    @apply text-indigo-600 underline font-medium hover:text-indigo-800 transition-colors;
+  }
+  
+  .markdown-body ul {
+    @apply list-disc ml-5 space-y-1 my-2;
+  }
+  
+  .markdown-body ol {
+    @apply list-decimal ml-5 space-y-1 my-2;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
